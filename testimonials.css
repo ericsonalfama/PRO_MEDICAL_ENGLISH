@@ -1,0 +1,125 @@
+
+.testimonial-section {
+    height: 100vh;
+    align-content: center;
+}
+
+.testimonial-block {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f925;
+    max-width: 80%;
+    margin: auto;
+    min-height: 500px;
+    align-content: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.inner-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 20px;
+    flex-shrink: 0;
+    align-content: center;
+    margin: auto;
+}
+
+.thumb {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.testimonial-info .name {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #00182e;
+}
+
+.title-2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.text {
+    font-size: 1.5em;
+    font-style: italic;
+    position: relative;
+    padding: 10px;
+    align-content: center;
+    color: #00182e;
+}
+
+.text::before, .text::after {
+    content: '“';
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #007bff;
+    position: absolute;
+}
+
+.text::before {
+    top: -60px;
+    left: -25px;
+}
+
+.text::after {
+    content: '”';
+    bottom: -120px;
+    right: 0px;
+}
+
+.arrows-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+    margin: auto;
+}
+
+.arrow-left-container, .arrow-right-container {
+    align-content: center;
+    text-align: center;
+}
+
+.arrow-left, .arrow-right {
+    color: #adb2b6;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .testimonial-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inner-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+
+    .text {
+        max-width: 100%;
+    }
+}
