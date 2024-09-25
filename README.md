@@ -26,7 +26,7 @@ This project is a dynamic and responsive landing page designed to promote the OE
   - **Modular Structure**: The use of modular JavaScript and CSS makes it easy to incorporate additional WordPress functionality as needed.
 
 ## Contact
-This project was developed as part of a job application for a web development position. For more information, please contact Ericson Giraldo.
+This project was developed as part of a job application for a web development position. For more information, please contact Ericson Pereira.
 
 ---
 
