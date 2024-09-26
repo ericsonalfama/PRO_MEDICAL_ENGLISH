@@ -1,7 +1,3 @@
-Here’s a concise resume-style README for your project that can be used for GitHub and for your job application:
-
----
-
 # OET Preparation Landing Page
 
 ## Project Overview
@@ -27,7 +23,3 @@ This project is a dynamic and responsive landing page designed to promote the OE
 
 ## Contact
 This project was developed as part of a job application for a web development position. For more information, please contact Ericson Pereira.
-
----
-
-This keeps the focus on what is important for the job application while highlighting the project’s main features.
