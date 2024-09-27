@@ -47,9 +47,16 @@ footer {
     margin: 0; 
 }
 
-.square-list-type a {
+.square-list-type a,
+.contact-list-type a {
     text-decoration: none;
     color: #221638 !important;
+    transition: transform 0.3s ease;
+}
+
+.square-list-type a:hover,
+.contact-list-type a:hover {
+    transform: translateX(10px);
 }
 
 .square-list-type:before {
@@ -84,11 +91,6 @@ footer {
 
 .contact-list-type {
     list-style-type: none;
-}
-
-.contact-list-type a {
-    text-decoration: none;
-    color: #221638 !important;
 }
 
 .container {
