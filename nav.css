@@ -13,8 +13,8 @@ body {
 /* Container Styling */
 .nav-container {
     width: 100%;
-    background-color: #ffffff; /* Couleur de fond du menu */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour l'en-tête */
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .navbar-brand img {
-    max-width: 250px; /* Taille du logo */
+    max-width: 250px;
 }
 
 /* Navigation Items */
@@ -47,21 +47,19 @@ body {
     font-size: 16px;
     font-weight: 600;
     padding: 8px 12px;
-    white-space: nowrap; /* Empêche le wrapping */
+    white-space: nowrap;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #2E9018; /* Couleur de survol */
+    color: #2E9018;
 }
 
 /* Dropdown Styling */
-
-
 .nav-item .dropdown-menu {
     display: none;
     position: absolute;
-    top: 190%; /* Posição ajustada para baixo */
+    top: 190%;
     left: 0;
     background-color: #ffffff;
     border-top: 3px solid #2E9018;
@@ -112,7 +110,7 @@ body {
 
 /* Menu burger style */
 .navbar-toggler {
-    display: none; /* Cacher par défaut */
+    display: none;
     background-color: transparent;
     border: none;
     font-size: 24px;
@@ -127,52 +125,19 @@ body {
     color: #2E9018;
 }
 
-/* Responsive Design */
-/* @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 15px;
-    }
-
-    .nav-item {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .nav-link {
-        text-align: center;
-        width: 100%;
-        padding: 12px 0;
-    }
-
-    .dropdown-menu {
-        left: auto;
-        right: 0;
-    }
-} */
-
-
-/* Styles pour le menu accordéon */
+/* Accordion */
 .nav-item.dropdown .dropdown-menu {
-    display: none; /* Cacher les dropdowns par défaut */
+    display: none;
 }
 
 .nav-item.dropdown.active .dropdown-menu {
-    display: block; /* Afficher le dropdown quand actif */
-    position: relative; /* Assure que le dropdown se positionne correctement */
+    display: block;
+    position: relative;
 }
 
-/* Styles pour le menu burger */
 .burger {
-    display: none; /* Cacher par défaut */
-}
+    display: none;
 
-/* Afficher le burger sur mobile */
 @media (max-width: 768px) {
 
     .navbar-collapse {
@@ -182,27 +147,27 @@ body {
         margin-left: -20px;
         padding: 25px;
         z-index: 3;
-        max-height: 0px; /* Commencer avec une hauteur de 0 */
-        overflow: visible; /* Cacher le débordement */
-        transition: max-height 0.3s ease; /* Transition sur la hauteur */
+        max-height: 0px;
+        overflow: visible;
+        transition: max-height 0.3s ease;
         visibility: collapse;
     }
 
     .navbar-nav {
-        display: block; /* Cacher le menu par défaut */
+        display: block;
         flex-direction: column;
         width: 100%;
     }
 
     .navbar-nav.active {
-        display: flex; /* Afficher le menu quand actif */
+        display: flex;
     }
 
     .navbar-collapse.active {
-        top: 124px; /* Position du menu */
-        max-height: 400%; /* Hauteur max quand actif, ajuste si nécessaire */
+        top: 124px;
+        max-height: 400%;
         background-color: #fff;
-        padding: 25px; /* Réajuste le padding si besoin */
+        padding: 25px;
         visibility: visible;
     }
 
@@ -243,7 +208,7 @@ body {
     }
 
     .burger {
-        display: block; /* Afficher le burger */
+        display: block;
         cursor: pointer;
     }
 
