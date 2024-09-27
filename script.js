@@ -1,4 +1,4 @@
-// Mostrar o botão quando o usuário rolar para baixo 100px
+// Show the button when the user scrolls down 100px
 window.onscroll = function() {
     const scrollTopBtn = document.getElementById('scrollTopBtn');
     
@@ -7,18 +7,17 @@ window.onscroll = function() {
     } else {
       scrollTopBtn.style.display = "none";
     }
-  };
-  
-  // Adicionar evento ao botão para rolar suavemente ao topo
-  document.getElementById('scrollTopBtn').addEventListener('click', function() {
+};
+
+// Event to the button for smooth scrolling to the top
+document.getElementById('scrollTopBtn').addEventListener('click', function() {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
-  });
-  
+});
 
-
+// Testimonial carousel
 document.addEventListener('DOMContentLoaded', function () {
     const carousel = document.querySelector('.testimonial-carousel');
     const items = carousel.querySelectorAll('.testimonial-block');
@@ -27,36 +26,30 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentIndex = 0;
     let autoPlayInterval;
   
-    // Mostrar apenas o item atual
     function showItem(index) {
       items.forEach((item, i) => {
         item.style.display = i === index ? 'block' : 'none';
       });
     }
   
-    // Ir para o próximo item
     function nextItem() {
       currentIndex = (currentIndex + 1) % items.length;
       showItem(currentIndex);
     }
   
-    // Ir para o item anterior
     function prevItem() {
       currentIndex = (currentIndex - 1 + items.length) % items.length;
       showItem(currentIndex);
     }
   
-    // Configurar autoplay
     function startAutoplay() {
-      autoPlayInterval = setInterval(nextItem, 7000); // Mudar a cada 7 segundos
+      autoPlayInterval = setInterval(nextItem, 7000);
     }
   
-    // Parar autoplay
     function stopAutoplay() {
       clearInterval(autoPlayInterval);
     }
   
-    // Listeners para navegação
     navNext.addEventListener('click', () => {
       stopAutoplay();
       nextItem();
@@ -69,8 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
       startAutoplay();
     });
   
-    // Inicializar o carousel
     showItem(currentIndex);
     startAutoplay();
-  });
-  
+});
