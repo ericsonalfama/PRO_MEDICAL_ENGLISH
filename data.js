@@ -1,5 +1,3 @@
-// Fichier : data.js
-
 const articlesData = [
     {
       title: "Specialized trainers",
@@ -21,48 +19,3 @@ const articlesData = [
     }
   ];
   
-
-// testimonials
-const testimonialsData = [
-    {
-        quote: "This course helped me pass the OET first time!",
-        name: "Student 1",
-        image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
-    },
-    {
-        quote: "The trainers are really competent and the support is great.",
-        name: "Student 2",
-        image: "https://images.pexels.com/photos/3762806/pexels-photo-3762806.jpeg"
-    },
-    {
-        quote: "I couldn't have asked for a better course. Highly recommended!",
-        name: "Student 3",
-        image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
-    },
-    {
-        quote: "Great experience! The course materials were top-notch.",
-        name: "Student 4",
-        image: "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg"
-    },
-    {
-        quote: "This course helped me pass the OET first time!",
-        name: "Student 1",
-        image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
-    },
-    {
-        quote: "The trainers are really competent and the support is great.",
-        name: "Student 2",
-        image: "https://images.pexels.com/photos/3762806/pexels-photo-3762806.jpeg"
-    },
-    {
-        quote: "I couldn't have asked for a better course. Highly recommended!",
-        name: "Student 3",
-        image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
-    },
-    {
-        quote: "Great experience! The course materials were top-notch.",
-        name: "Student 4",
-        image: "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg"
-    },
-    
-];
